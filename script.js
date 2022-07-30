@@ -48,3 +48,34 @@ function largestElement(arr){
     //console.log(largestValue);
 }
 //largestElement(myArray)  //the return value doesnt work if the largest vaule is the last index of the array. 
+
+// 6. Get and print average. Analyze an arry's values and print the average
+var average = arrAvg ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+function arrAvg(arr){
+    var sum = 0;
+    
+
+    for(var i=0; i<arr.length; i++){
+        sum += arr[i];
+        // console.log(sum);
+    }
+    var avg = sum/arr.length;
+    // console.log(avg);
+}
+
+// 7. Array with odds: Create an array with all the odd integers between 1 and 255
+
+
+function oddArr(){
+
+    var odd = [];
+    for(var i=1; i<256; i++){
+        if (i % 2 == 1) {
+            odd.push(i);
+        }
+    }
+    return odd;
+}
+var x = oddArr();
+console.log(x);
